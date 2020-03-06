@@ -12,4 +12,14 @@ Windows、Linux、UNIX等多个操作系统上运行。
 ### 2.Bridge.SwitchsAndLights
 开关和电灯, 开关和电灯都可以多维度扩充, 怎么样实现呢?
 
+## 22.策略模式
+### 1.Strategy.MarketPromotion
+商品打折策略选择, 我们有: 打8折商品促销策略, 
+满1000减200商品促销策略, 高于200部分打8折商品促销策略
+应该如何用策略模式实现?
+### 2.Strategy.StrategyOfCompany
+企业策略选择(超简单实现)
+不同的企业有着不同的口号.
+
+
 
