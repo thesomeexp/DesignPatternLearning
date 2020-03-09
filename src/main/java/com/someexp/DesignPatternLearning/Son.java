@@ -1,25 +1,26 @@
 package com.someexp.DesignPatternLearning;
 
 public class Son extends Parent{
-    private int x;
-    private int y;
-    public Son(int x, int y) {
-        // TODO Auto-generated constructor stub
-        System.out.println("Son");
-        this.x = x;
-        this.y = y;
+    private int sonValue;
+    
+    private Son son;
+    
+    public int getSonValue() {
+        return sonValue;
     }
-    public int getX() {
-        return x;
+
+    public void setSonValue(int sonValue) {
+        this.sonValue = sonValue;
     }
-    public void setX(int x) {
-        this.x = x;
+
+    public Son getSon() {
+        return son;
     }
-    public int getY() {
-        return y;
+
+    public void setSon(Son son) {
+        this.son = son;
     }
-    public void setY(int y) {
-        this.y = y;
-    }
+    
+    
     
 }

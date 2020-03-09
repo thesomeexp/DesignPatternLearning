@@ -1,12 +1,26 @@
 package com.someexp.DesignPatternLearning;
 
 public class Parent {
-    public Parent() {
-        // TODO Auto-generated constructor stub
-        System.out.println("Parent");
+    
+    private int parentValue;
+    
+    private Parent parent;
+
+    public int getParentValue() {
+        return parentValue;
     }
-    public void sayHello() {
-        // TODO Auto-generated method stub
-        System.out.println("Parent say hello");
+
+    public void setParentValue(int parentValue) {
+        this.parentValue = parentValue;
     }
+
+    public Parent getParent() {
+        return parent;
+    }
+
+    public void setParent(Parent parent) {
+        this.parent = parent;
+    }
+    
+    
 }

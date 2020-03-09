@@ -1,7 +1,5 @@
 package FactoryMethod.CaoCaoOfferedKnife.model;
 
-import sun.launcher.resources.launcher;
-
 /**
  * 需要生产的抽象剑
  * @author someexp
