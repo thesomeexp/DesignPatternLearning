@@ -1,7 +1,28 @@
 # 设计模式Java实现
 这里只是设计模式的一些Java代码实例演示. 
 作为<软件秘籍 设计模式那点事>的代码笔记保存, 还有一些例子. 
+## 1.简单工厂模式SimpleFactory
+简单来说就是根据参数的不同返回不同类的实例, 被创建的实例通常
+都具有共同的父类. 
+JDK中Calendar类的createCalendar方法创建实例时就使用了简单工厂模式. 
+### 1. 图表库ChartLibrary
+某软件公司要基于Java语言开发一套图表库，该图表库可以
+为应用系统提供多种不同外观的图表，例如柱状图(HistogramChart)、
+饼状图(PieChart)、折线图(LineChart)等。该软件公司图表库
+设计人员希望为应用系统开发人员提供一套灵活易用的图表库，
+通过设置不同的参数即可得到不同类型的图表，而且可以较为方便地
+对图表库进行扩展，以便能够在将来增加一些新类型的图表。
+现使用简单工厂模式来设计该图表库。
+
 ## 2.工厂方法模式FactoryMethod
+工厂方法模式简单来说是一个特定的工厂创建一个特定的产品. 
+JDK中java.util.List作为一个抽象接口工厂, 它有一个iterator()
+方法, 该方法会返回一个迭代器接口Iterator(抽象产品). 
+List子类java.util.LinkedList实现iterator()方法, 返回具体的
+产品AbstractList$ListItr. 
+List子类java.util.ArrayList实现iterator()方法, 返回具体的
+产品AbstractList$Itr. 
+他们返回的产品都是AbstractList内部类, 实现了Iterator接口. 
 ### 1.曹操献刀CaoCaoOfferedKnife
 书中作者提到的一个例子, 在曹操献刀这个故事中, 王允作为武器工厂
 生产抽象宝刀, 而曹操则负责生产具体的七星宝刀, 曹操2则是八星
@@ -20,6 +41,11 @@
 就不在这里实现了)
 
 ## 3.抽象工厂模式AbstractFactory
+提供一个用于创建相关或者依赖对象的家族(产品族)的接口, 
+而不需要指定具体实现类. 
+JDK中java.sql.DriverManager就是抽象工厂的一个实现吧. 
+Mysql, Oracle等驱动管理器继承于它, 从而生产不同的
+Connection, Statement, PreparedStatement等产品…
 ### 1.窗口换肤 皮肤库SkinLibrary
 某软件公司要开发一套界面皮肤库，可以对基于Java的桌面软件
 进行界面美化。用户在使用时可以通过菜单来选择皮肤，不同的

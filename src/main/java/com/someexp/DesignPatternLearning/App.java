@@ -1,18 +1,25 @@
 package com.someexp.DesignPatternLearning;
 
-import com.sun.xml.internal.bind.v2.runtime.Name;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * Hello world!
  *
  */
-public class App 
+class App 
 {
-    public static void name(Son a) {
-        
-    }
     public static void main( String... args )
     {
-        System.out.println( "Hello World!" );
+        new Son();
+        Vector<String> vsStirngs = new Vector<String>();
+        vsStirngs.add("a:");
+        vsStirngs.add("b");
+        vsStirngs.add("c");
+        for(String string : vsStirngs) {
+            System.out.println(string);
+        }
+        
     }
 }
