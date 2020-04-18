@@ -5,6 +5,6 @@ package Adapter.PowerAdapter.power.v12;
  *
  */
 public interface IPower12 {
-	// 12V交流电源打印
-	public void output12v();
+    // 12V交流电源打印
+    public void output12v();
 }

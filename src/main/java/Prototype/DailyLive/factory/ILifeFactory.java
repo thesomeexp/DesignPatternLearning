@@ -8,6 +8,6 @@ import Prototype.DailyLive.pojo.DailyLife;
  *
  */
 public interface ILifeFactory {
-	// 生产DayLife对象
-	public DailyLife getNewInstance();
+    // 生产DayLife对象
+    public DailyLife getNewInstance();
 }
